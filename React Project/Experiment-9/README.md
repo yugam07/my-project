@@ -17,27 +17,6 @@ This experiment demonstrates **object-oriented programming (OOP)** concepts in J
 - **Method Overriding**: Subclasses override `displayInfo()` and `getRole()`
 - **Same Interface**: Different implementations through inherited methods
 
-## Class Hierarchy
-Person (Base Class)
-├── name: string
-├── age: number
-├── displayInfo(): string
-├── getRole(): string
-│
-├── Student (Subclass)
-│   ├── grade: string
-│   ├── course: string
-│   ├── displayInfo(): string (overridden)
-│   ├── getRole(): string (overridden)
-│   └── study(): string (unique method)
-│
-└── Teacher (Subclass)
-    ├── subject: string
-    ├── department: string
-    ├── displayInfo(): string (overridden)
-    ├── getRole(): string (overridden)
-    └── teach(): string (unique method)
-
 ## Code Explanation
 
 ### Base Class Setup

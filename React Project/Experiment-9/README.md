@@ -1,88 +1,57 @@
-# Person Class Hierarchy with Student and Teacher Subclasses – Experiment 9
-
-## Introduction
-This experiment demonstrates **object-oriented programming (OOP)** concepts in JavaScript using ES6 classes. It creates a class hierarchy with inheritance, method overriding, and polymorphism - essential patterns for building structured, maintainable applications.
-
-## Core OOP Concepts Demonstrated
-### Inheritance
-- **Base Class**: `Person` with common properties (name, age)
-- **Subclasses**: `Student` and `Teacher` extend `Person`
-- **Code Reuse**: Subclasses inherit properties and methods from parent
-
-### Encapsulation
-- **Properties**: Data stored within class instances
-- **Methods**: Behaviors encapsulated within each class
-
-### Polymorphism
-- **Method Overriding**: Subclasses override `displayInfo()` and `getRole()`
-- **Same Interface**: Different implementations through inherited methods
-
-## Code Explanation
-
-### Base Class Setup
-- **Person class**: Base class with `name`, `age` properties
-- **Core methods**: `displayInfo()` returns basic details, `getRole()` returns "Person"
-
-### Student Subclass
-- **Extends Person**: Inherits all Person properties/methods
-- **Additional properties**: `grade`, `course` (academic-specific)
-- **Method overriding**: Custom `displayInfo()` includes academic details
-- **Unique method**: `study()` - student-specific behavior
-
-### Teacher Subclass  
-- **Extends Person**: Inherits from Person class
-- **Additional properties**: `subject`, `department` (professional-specific)
-- **Method overriding**: Custom `displayInfo()` includes teaching details
-- **Unique method**: `teach()` - teacher-specific behavior
-
-### Key Techniques
-- **super()**: Calls parent constructor to initialize inherited properties
-- **super.method()**: Extends parent methods instead of replacing them
-- **Method overriding**: Subclasses provide specialized implementations
-- **Polymorphism**: Different objects responding to same method calls differently
-
-### Demonstration
-- Creates instances of Student and Teacher
-- Shows inherited and overridden methods working
-- Demonstrates polymorphism with array of different person types
-- Validates inheritance with instanceof checks
-
-## Execution Instructions
-### Running the Application
-To execute this Person class hierarchy demonstration, run the following command in your terminal:
-- cd Experiment-9
-- node Person.js
-
-## Key JavaScript Features
-- **ES6 Classes**: Modern class syntax with constructor and methods
-- **extends**: Creates inheritance between classes
-- **super**: Accesses parent class constructor and methods
-- **Method Overriding**: Subclasses provide custom implementations
-- **instanceof**: Type checking for class inheritance
-
-## Real-World Applications
--Educational Systems
-- Human Resources
-- Enterprise Applications
+# Student Details Viewer
+This is a simple web-based project that allows users to view the details of students such as **Name**, **Age**, and **Subject**.  
+The project is built using **HTML, CSS, and JavaScript (with ES6 classes)**.
 
 
-## What I Learned
-### Technical Skills
-- Implementing classical inheritance in JavaScript
-- Method overriding and polymorphism patterns
-- Using `super()` for parent constructor calls
-- Creating specialized class hierarchies
+## Project Structure
+- `index.html` → The main webpage where the student list and details are displayed.  
+- `Person.js` → Contains the `Person` and `Student` classes, along with the logic to display student details dynamically.  
+- `exp9.css` → Stylesheet used to make the webpage look clean and organized.  
 
-### Practical Applications
-- Building scalable class architectures
-- Creating maintainable code through inheritance
-- Implementing role-based systems
-- Developing extensible software systems
 
-## Output Demonstration
-The code successfully demonstrates:
-- Inheritance through `instanceof` checks
-- Method overriding with customized information
-- Polymorphism handling different object types
-- Unique methods specific to each subclass
-- Proper constructor chaining with `super()`
+## How It Works
+1. **Classes Defined in JavaScript**
+   - `Person` class: A base class that holds general properties like `name` and `age`.  
+   - `Student` class: Extends `Person` and adds the `subject` property.  
+
+2. **Creating Student Objects**
+   - A few student objects are created using the `Student` class.  
+   - Each object stores a student’s details (name, age, and subject).  
+
+3. **Displaying Student Names**
+   - On the webpage (`index.html`), the names of all students are displayed in a list.  
+   - Each student name is clickable.  
+
+4. **Viewing Details**
+   - When a student’s name is clicked, their details (**Name, Age, Subject**) are shown on the right-hand side.  
+   - Each detail appears on a **separate line** for better readability.  
+
+5. **Styling**
+   - `exp9.css` is used for layout and styling.  
+   - The page is divided into two sections:
+     - **Left Section:** Displays the list of student names.  
+     - **Right Section:** Displays the selected student’s details.  
+
+---
+
+## Usage
+1. Open `index.html` in your browser.  
+2. You will see a list of student names on the left side.  
+3. Click on any student’s name to view their details on the right side.  
+
+---
+
+## Learning Outcomes
+- Understanding **Object-Oriented Programming (OOP)** in JavaScript.  
+- Using **class inheritance** (`extends`) to build upon base classes.  
+- Manipulating the **DOM** dynamically using JavaScript.  
+- Applying **CSS styling** for structured layout and improved user experience.  
+- Organizing a project into **separate files** (`HTML`, `CSS`, `JS`) for better maintainability.  
+
+## Example Output  
+
+Clicking on **Alice** will display:  
+Role: Student
+Name: Alice
+Age: 20
+Course: Computer Science

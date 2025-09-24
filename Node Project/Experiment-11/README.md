@@ -51,7 +51,25 @@ http://localhost:3000
 ## Testing API
 Tested the endpoints using Postman
 
-### Outputs
+## Outputs
+
+### GET All Cards 
+![GET](./images/GET_AllCards.png)
+
+### GET a Card
+![GET](./images/GET_Card2.png)
+
+### POST Card with a Body
+![POST](./images/POST_CardsWithBody.png)
+
+### PUT Card
+![PUT](./images/PUT_WithBody.png)
+
+### DELETE a Card
+![DELETE](./images/DELETE_Card1.png)
+
+### GET a Card after Deletion
+![GET](./images/GET_AfterDeletion.png)
 
 ## Learning Outcomes
 - Learned how to build a REST API with Express.js.
